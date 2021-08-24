@@ -3,19 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TstdropComponent } from './tstdrop/tstdrop.component';
+import { PracticeComponent } from './practice/practice.component';
 import { FormsModule } from '@angular/forms';
 import { NgxTreeSelectModule, ExpandMode } from 'ngx-tree-select';
 import { HomeComponent } from './home/home.component';
-import { TestlastComponent } from './testlast/testlast.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TstdropComponent,
+    PracticeComponent,
     HomeComponent,
-    TestlastComponent, 
   ],
   imports: [
     BrowserModule,

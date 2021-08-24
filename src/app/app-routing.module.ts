@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { TstdropComponent } from './tstdrop/tstdrop.component';
+import { PracticeComponent } from './practice/practice.component';
 
 const routes: Routes = [
   {
     path: '', 
-    component:TstdropComponent
+    component:PracticeComponent
   },
   {
     path: 'home', 

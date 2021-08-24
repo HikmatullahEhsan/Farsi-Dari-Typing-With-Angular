@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Data } from './tstdrop/data';
 
 export interface Item {
   id: string,
@@ -21,7 +20,6 @@ export interface DownLineItem {
 })
 export class AppComponent  {
   name = 'Angular';
-  public data = Data;
   items = [];
   public AllowParentSelection = true;
   public RestructureWhenChildSameName = false;

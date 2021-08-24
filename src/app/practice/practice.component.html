@@ -1,0 +1,26 @@
+<div class="container">
+  <br>
+  <h3>Practcing Farsi-Dari keyboard</h3>
+  <form>
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text" [(ngModel)]="firstName"   name="firstName" class="form-control farsi-keyboard" placeholder="First Name" lang="fa-IR"/>
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input type="text" [(ngModel)]="lastName"  name="lastName" class="form-control farsi-keyboard" placeholder="Last Name" lang="fa-IR"/>
+    </div>
+
+    <div class="form-group">
+      <label>Details</label>
+      <textarea [(ngModel)]="details" name="details" class="form-control farsi-keyboard" lang="fa-IR"></textarea>
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="text" [(ngModel)]="email"  name="email" class="form-control " placeholder="Email"  />
+    </div> 
+    <input type="button" class="btn btn-info" value="Submit and Continue"/>
+  </form>
+    <input id="disableFarsiType" type="checkbox" /> Activate/Deactivate Farsi keyboard
+    <a routerLink="/home">Home Page</a>
+</div>
