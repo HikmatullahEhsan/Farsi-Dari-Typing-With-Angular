@@ -1,0 +1,50 @@
+<div class="container">
+    <!-- <div class="page-header">
+      <h1>Exemple ngx-tree-select with flat datas</h1>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">Simple select</div>
+      <div class="panel-body">
+        <form novalidate>
+          <tree-select name="simpleSelect" [items]="items" idField="id" textField="name" childrenField="children" [(ngModel)]="simpleSelected"
+            required=true #simpleSelect="ngModel" [filterPlaceholder]="FilterPlaceholder" [allowFilter]="ShowFilter" [disabled]="Disabled"
+            [allowParentSelection]="AllowParentSelection" [restructureWhenChildSameName]="RestructureWhenChildSameName"></tree-select>
+          <div *ngIf="simpleSelect.errors && (simpleSelect.dirty || simpleSelect.touched)" class="alert alert-danger">
+            <div [hidden]="!simpleSelect.errors.required">Simple select is required</div>
+          </div>
+        </form>
+        <div class="col-md-12">
+          {{simpleSelected | json}}
+        </div>
+      </div>
+    </div> -->
+    <form>
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text" [(ngModel)]="firstName"   name="firstName" class="form-control farsi-keyboard" placeholder="First Name" lang="fa-IR"/>
+      </div>
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" [(ngModel)]="lastName"  name="lastName" class="form-control farsi-keyboard" placeholder="Last Name" lang="fa-IR"/>
+      </div>
+
+      <div class="form-group">
+        <label>Details</label>
+        <textarea [(ngModel)]="details" name="details" class="form-control farsi-keyboard" lang="fa-IR"></textarea>
+      </div>
+
+      <!-- <div class="form-group">
+        <label>DetailsDetails</label>
+        <textarea [(ngModel)]="detailsdetails" name="detailsdetails" class="form-control farsi-keyboard" lang="fa-IR"></textarea>
+      </div> -->
+
+      <div class="form-group">
+          <label>Email</label>
+          <input type="text" [(ngModel)]="email"  name="email" class="form-control " placeholder="Email"  />
+      </div> 
+      <input type="button" class="btn btn-sucess" value="Submit and Continue"/>
+    </form>
+    <input id="disableFarsiType" type="checkbox" /> Disable Farsi keyboard
+    <a routerLink="/home">Home Page</a>
+
+</div>
